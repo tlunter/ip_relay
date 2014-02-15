@@ -1,0 +1,18 @@
+[Unit]
+Description=Foreman
+After=syslog.target
+
+[Service]
+User=tlunter
+WorkingDirectory=/opt/ip_relay
+ExecStart=/usr/bin/zsh -lc 'rbenv exec bundle exec foreman start'
+Restart=always
+StandardInput=null
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=%n
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+
