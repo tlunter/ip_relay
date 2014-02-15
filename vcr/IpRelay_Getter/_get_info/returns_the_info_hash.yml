@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ipinfo.io/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.31.0
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 15 Feb 2014 19:46:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '229'
+      Connection:
+      - close
+      X-Powered-By:
+      - Express
+      ETag:
+      - '"1228214206"'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "ip": "24.61.23.195",
+          "hostname": "c-24-61-23-195.hsd1.ma.comcast.net",
+          "city": "Boston",
+          "region": "Massachusetts",
+          "country": "US",
+          "loc": "42.3584,-71.0598",
+          "org": "AS7922 Comcast Cable Communications, Inc."
+        }
+    http_version: 
+  recorded_at: Sat, 15 Feb 2014 19:46:29 GMT
+recorded_with: VCR 2.8.0
