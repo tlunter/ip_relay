@@ -3,7 +3,7 @@ class IpRelay::Getter
   attr_writer :url
 
   def url
-    @url ||= 'https://ipinfo.io/json'
+    @url ||= 'http://ipinfo.io/json'
   end
 
   def get_info

@@ -4,7 +4,7 @@ After=syslog.target
 
 [Service]
 User=tlunter
-WorkingDirectory=/opt/ip_relay
+WorkingDirectory=/opt/tlunter/ip_relay
 ExecStart=/usr/bin/zsh -lc 'rbenv exec bundle exec foreman start'
 Restart=always
 StandardInput=null
